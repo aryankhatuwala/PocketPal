@@ -13,13 +13,14 @@ import CryptoDashboard from "./components/crypto-dashboard.component";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
+  const apiUrl=process.env.BACKEND_URL;
 useEffect(() => {
   const checkLoggedIn = async () => {
     // if (localStorage.getItem('jwt')) {
 
         Axios({
             method: 'get',
-            url: 'http://pocket-pal-topaz.vercel.app/',
+            url: ${apiUrl},
             headers: {
                 'Authorization': localStorage.getItem('jwt'),
             }
