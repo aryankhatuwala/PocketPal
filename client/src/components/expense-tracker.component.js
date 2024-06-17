@@ -61,7 +61,7 @@ export default function ExpenseTracker() {
         setEditModalShow(false);
         await Axios({
             method: 'get',
-            url: `${apiUrl}/api/protected/income//getHistory`,
+            url: `${apiUrl}/api/protected/income/getHistory`,
             headers: {
                 'Authorization': localStorage.getItem('jwt'),
             },
