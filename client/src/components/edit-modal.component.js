@@ -14,6 +14,7 @@ export default function EditModal(props) {
     const [transactionType, setTransactionType] = useState("");
     const [error, setError] = useState("");
     const [errorModalShow, setErrorModalShow] = useState();
+    const apiUrl = process.env.BACKEND_URL;
 
     useEffect(() => {
         setTransactionTitle(props.transaction.transactionTitle);
@@ -28,7 +29,7 @@ export default function EditModal(props) {
             e.target.reset();
             await Axios({
                 method: 'put',
-                url: 'http://localhost:5000/api/protected/income/editTransaction/'+props.transaction._id,
+                url: `${apiUrl}/api/protected/income/editTransaction/`+props.transaction._id,
                 headers: {
                     'Authorization': localStorage.getItem('jwt'),
                 },

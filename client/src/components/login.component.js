@@ -5,18 +5,19 @@ import Axios from 'axios';
 
 import ErrorModal from '../components/error-modal.component';
 
+
 export default function Login() {
     const [username, setUsername] = useState();
     const [password, setPassword] = useState();
     const [error, setError] = useState();
     const [modalShow, setModalShow] = useState(false);
-
+const apiUrl = process.env.BACKEND_URL;
     useEffect(() => {
         const checkLoggedIn = async () => {
             if (localStorage.getItem('jwt')) {
                 Axios({
                     method: 'get',
-                    url: 'https://pocket-pal-topaz.vercel.app/api/users/isAuthenticated',
+                    url: `${apiUrl}/api/users/isAuthenticated`,
                     headers: {
                         'Authorization': localStorage.getItem('jwt'),
                     }
@@ -44,7 +45,7 @@ export default function Login() {
                 password,
 
             }
-            const loginRes = await Axios.post("https://pocket-pal-topaz.vercel.app/api/users/login", loginUser);
+            const loginRes = await Axios.post(`${apiUrl}/api/users/login`, loginUser);
 
             localStorage.setItem('jwt', loginRes.data.token);
            

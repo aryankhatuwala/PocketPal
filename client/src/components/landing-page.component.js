@@ -5,7 +5,8 @@ import Axios from 'axios';
 import { Container, Col, Row } from 'react-bootstrap';
 
 export default function HomePage() {
-
+ 
+    const apiUrl = process.env.BACKEND_URL;
 
     useEffect(() => {
 
@@ -14,7 +15,7 @@ export default function HomePage() {
 
                 Axios({
                     method: 'get',
-                    url: 'http://localhost:5000/api/users/isAuthenticated',
+                    url: `${apiUrl}/api/users/isAuthenticated`,
                     headers: {
                         'Authorization': localStorage.getItem('jwt'),
                     }

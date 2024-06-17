@@ -29,6 +29,7 @@ export default function ExpenseTracker() {
     const [errorModalShow, setErrorModalShow] = useState(false);
  
     const[transactionToEdit,setTransactionToEdit]=useState([]);
+    const apiUrl = process.env.BACKEND_URL;
     useEffect(() => {
 
         const checkLoggedIn = async () => {
@@ -36,7 +37,7 @@ export default function ExpenseTracker() {
 
                 Axios({
                     method: 'get',
-                    url: 'http://localhost:5000/api/users/isAuthenticated',
+                    url: `${apiUrl}/api/users/isAuthenticated`,
                     headers: {
                         'Authorization': localStorage.getItem('jwt'),
                     }
@@ -60,7 +61,7 @@ export default function ExpenseTracker() {
         setEditModalShow(false);
         await Axios({
             method: 'get',
-            url: 'http://localhost:5000/api/protected/income//getHistory',
+            url: `${apiUrl}/api/protected/income//getHistory`,
             headers: {
                 'Authorization': localStorage.getItem('jwt'),
             },
@@ -129,7 +130,7 @@ export default function ExpenseTracker() {
 
             await Axios({
                 method: 'post',
-                url: 'http://localhost:5000/api/protected/income/addTransaction',
+                url: `${apiUrl}/api/protected/income/addTransaction`,
                 headers: {
                     'Authorization': localStorage.getItem('jwt'),
                 },
@@ -160,7 +161,7 @@ export default function ExpenseTracker() {
     const deletetransaction = async (id) => {
         await Axios({
           method: 'delete',
-          url: 'http://localhost:5000/api/protected/income/deleteTransaction/'+id,
+          url: `${apiUrl}/api/protected/income/deleteTransaction/`+id,
           headers: {
             'Authorization': localStorage.getItem('jwt'),
           },

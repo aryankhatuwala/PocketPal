@@ -11,14 +11,14 @@ export default function Register() {
     const [error, setError] = useState();
     const [modalShow, setModalShow] = useState(false);
 
-
+   const apiUrl = process.env.BACKEND_URL;
     useEffect(() => {
         const checkLoggedIn = async () => {
             if (localStorage.getItem('jwt')) {
 
                 Axios({
                     method: 'get',
-                    url: 'http://localhost:5000/api/users/isAuthenticated',
+                    url: `${apiUrl}/api/users/isAuthenticated`,
                     headers: {
                         'Authorization': localStorage.getItem('jwt'),
                     }
@@ -47,7 +47,7 @@ export default function Register() {
                 confirmPassword
             }
 
-            await Axios.post("http://localhost:5000/api/users/register", registerUser);
+            await Axios.post(`${apiUrl}/api/users/register`, registerUser);
             window.location = '/login';
 
 
