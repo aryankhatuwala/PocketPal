@@ -4,7 +4,6 @@ import Axios from 'axios';
 import './App.css';
 import Navbar from "./components/navbar.component";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import LandingPage from "./components/landing-page.component";
 import Login from "./components/login.component";
 import ExpenseTracker from "./components/expense-tracker.component";

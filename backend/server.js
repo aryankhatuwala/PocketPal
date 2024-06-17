@@ -12,7 +12,7 @@ const port=process.env.PORT||5000;
 
 app.use(cors(
     {
-    origin:['https://pocket-pal-frontend.vercel.app','http://localhost:3000'],
+    origin:['http://pocket-pal-frontend.vercel.app','http://localhost:3000'],
     methods: ["POST","GET"],
     credentials: true
 }
