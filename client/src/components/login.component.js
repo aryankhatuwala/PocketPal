@@ -44,7 +44,7 @@ export default function Login() {
                 password,
 
             }
-            const loginRes = await Axios.post("http://localhost:5000/api/users/login", loginUser);
+            const loginRes = await Axios.post("http://pocket-pal-topaz.vercel.app/api/users/login", loginUser);
 
             localStorage.setItem('jwt', loginRes.data.token);
            
