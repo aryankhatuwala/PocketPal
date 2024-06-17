@@ -14,7 +14,7 @@ export default function EditModal(props) {
     const [transactionType, setTransactionType] = useState("");
     const [error, setError] = useState("");
     const [errorModalShow, setErrorModalShow] = useState();
-    const apiUrl = process.env.BACKEND_URL;
+    const apiUrl = process.env.REACT_APP_BACKEND_URL;
 
     useEffect(() => {
         setTransactionTitle(props.transaction.transactionTitle);

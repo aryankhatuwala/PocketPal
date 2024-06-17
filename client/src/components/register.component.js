@@ -11,7 +11,7 @@ export default function Register() {
     const [error, setError] = useState();
     const [modalShow, setModalShow] = useState(false);
 
-   const apiUrl = process.env.BACKEND_URL;
+   const apiUrl = process.env.REACT_APP_BACKEND_URL;
     useEffect(() => {
         const checkLoggedIn = async () => {
             if (localStorage.getItem('jwt')) {

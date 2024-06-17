@@ -10,17 +10,19 @@ import Login from "./components/login.component";
 import ExpenseTracker from "./components/expense-tracker.component";
 import Register from "./components/register.component";
 import CryptoDashboard from "./components/crypto-dashboard.component";
+require('dotenv').config();
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
-  const apiUrl=process.env.BACKEND_URL;
+  const apiUrl=process.env.REACT_APP_BACKEND_URL;
+  console.log("apiUrl: ",apiUrl);
 useEffect(() => {
   const checkLoggedIn = async () => {
     // if (localStorage.getItem('jwt')) {
 
         Axios({
             method: 'get',
-            url: `${apiUrl}`,
+            url: `${apiUrl}/api/users/isAuthenticated`,
             headers: {
                 'Authorization': localStorage.getItem('jwt'),
             }

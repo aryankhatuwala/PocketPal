@@ -29,7 +29,7 @@ export default function ExpenseTracker() {
     const [errorModalShow, setErrorModalShow] = useState(false);
  
     const[transactionToEdit,setTransactionToEdit]=useState([]);
-    const apiUrl = process.env.BACKEND_URL;
+    const apiUrl = process.env.REACT_APP_BACKEND_URL;
     useEffect(() => {
 
         const checkLoggedIn = async () => {

@@ -6,7 +6,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 
 export default function HomePage() {
  
-    const apiUrl = process.env.BACKEND_URL;
+    const apiUrl = process.env.REACT_APP_BACKEND_URL;
 
     useEffect(() => {
 

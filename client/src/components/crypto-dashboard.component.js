@@ -468,7 +468,7 @@ export default function CryptoDashboard() {
 
     const [amountToConvert, setAmountToConvert] = useState({ currency: coinName, amount: 0 });
     const [convertedAmount, setConvertedAmount] = useState({ currency: "USD", amount: 0 });
-    const apiUrl = process.env.BACKEND_URL;
+    const apiUrl = process.env.REACT_APP_BACKEND_URL;
 
     useEffect(() => {
 
@@ -593,7 +593,7 @@ export default function CryptoDashboard() {
         try {
             await Axios({
                 method: 'post',
-                url: 'http://localhost:5000/api/protected/vantage-api/getHistory',
+                url: `${apiUrl}/api/protected/vantage-api/getHistory`,
                 headers: {
                     'Authorization': localStorage.getItem('jwt'),
                 },
@@ -658,7 +658,7 @@ export default function CryptoDashboard() {
         try {
             await Axios({
                 method: 'post',
-                url: 'http://localhost:5000/api/protected/vantage-api/getCryptoRating',
+                url: `${apiUrl}/api/protected/vantage-api/getCryptoRating`,
                 headers: {
                     'Authorization': localStorage.getItem('jwt'),
                 },
@@ -685,7 +685,7 @@ export default function CryptoDashboard() {
         try {
             await Axios({
                 method: 'post',
-                url: 'http://localhost:5000/api/protected/vantage-api/getExchangeRate',
+                url: `${apiUrl}/api/protected/vantage-api/getExchangeRate`,
                 headers: {
                     'Authorization': localStorage.getItem('jwt'),
                 },
