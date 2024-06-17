@@ -19,7 +19,7 @@ useEffect(() => {
 
         Axios({
             method: 'get',
-            url: 'https://pocket-rlnn6p3kv-aryankhatuwalas-projects.vercel.app/',
+            url: 'http://pocket-pal-topaz.vercel.app/',
             headers: {
                 'Authorization': localStorage.getItem('jwt'),
             }

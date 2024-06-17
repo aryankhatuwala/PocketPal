@@ -11,7 +11,7 @@ const app=express();
 const port=process.env.PORT||5000;
 
 app.use(cors({
-    origin:['https://pocket-pal-frontend.vercel.app'],
+    origin:['http://pocket-pal-frontend.vercel.app'],
     methods: ["POST","GET"],
     credentials: true
 }
