@@ -1,0 +1,46 @@
+{
+  "BTC": {
+    "1. From_Currency Code": "BTC",
+    "2. From_Currency Name": "Bitcoin",
+    "3. To_Currency Code": "USD",
+    "4. To_Currency Name": "United States Dollar",
+    "5. Exchange Rate": "30000.00000000",
+    "6. Last Refreshed": "2024-06-17 07:22:13",
+    "7. Time Zone": "UTC",
+    "8. Bid Price": "29999.00000000",
+    "9. Ask Price": "30001.00000000"
+  },
+  "EUR": {
+    "1. From_Currency Code": "EUR",
+    "2. From_Currency Name": "Euro",
+    "3. To_Currency Code": "USD",
+    "4. To_Currency Name": "United States Dollar",
+    "5. Exchange Rate": "1.10000000",
+    "6. Last Refreshed": "2024-06-17 07:22:13",
+    "7. Time Zone": "UTC",
+    "8. Bid Price": "1.09950000",
+    "9. Ask Price": "1.10050000"
+  },
+  "INR": {
+    "1. From_Currency Code": "INR",
+    "2. From_Currency Name": "Indian Rupee",
+    "3. To_Currency Code": "USD",
+    "4. To_Currency Name": "United States Dollar",
+    "5. Exchange Rate": "0.01200000",
+    "6. Last Refreshed": "2024-06-17 07:22:13",
+    "7. Time Zone": "UTC",
+    "8. Bid Price": "0.01190000",
+    "9. Ask Price": "0.01210000"
+  },
+  "JPY": {
+    "1. From_Currency Code": "JPY",
+    "2. From_Currency Name": "Japanese Yen",
+    "3. To_Currency Code": "USD",
+    "4. To_Currency Name": "United States Dollar",
+    "5. Exchange Rate": "0.00750000",
+    "6. Last Refreshed": "2024-06-17 07:22:13",
+    "7. Time Zone": "UTC",
+    "8. Bid Price": "0.00749000",
+    "9. Ask Price": "0.00751000"
+  }
+}

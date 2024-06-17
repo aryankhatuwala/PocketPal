@@ -1,0 +1,169 @@
+.App {
+  text-align: center;
+   /* background: linear-gradient(to right, #188977, #1D9A6C); */
+    background: linear-gradient(to bottom, #000000, #000000 70%, #06063c 100%);
+    height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.container-fluid{
+ 
+  padding: 0;
+  text-align: center;
+ }
+
+ .row{
+  margin-right:0!important;
+  margin-left:0!important;
+}
+.App-link {
+  color: #61dafb;
+}
+.section-1-img{
+  margin-top:5.5rem;
+  width:50rem;
+}
+.text-container{
+  text-align: right;
+  margin-top: 9rem;
+  color: #c1c6c6;
+  padding-right: 60px;
+  padding-bottom: 50px;
+}
+
+/* text-shadow: 2px 2px 5px red; */
+#Header{
+color: #fdffff;
+font-size: 75px;
+font-weight: bold;
+padding-bottom: 30px;
+
+}
+#Sub-Header{
+  color:#d1d5e0;
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 30px;
+
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media(max-width:768px){
+  .section-1-img{
+        margin-top: 1rem;
+
+    width:30rem;
+  }
+  .text-container{
+    text-align: left;
+    margin-top:1rem
+  }
+}
+@media(max-width:1280px){
+  .text-container{
+
+    margin-top:1rem
+  }
+}
+
+.nav-bar {
+  background-color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+/* component.css */
+
+/* Style for the navbar */
+.nav-bar {
+  background-color: rgb(0, 0, 0) !important; /* Solid black background */
+  /* background: linear-gradient(to bottom, #000000, #8B008B) !important; Gradient background */
+  /* padding: 1rem !important; */
+  border-bottom: 0.5px solid  #fff; /* Add dashed border */
+}
+
+.nav-bar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff !important;
+  text-align: center;
+  justify-content: center;
+}
+
+.nav-bar .nav-link {
+  color: #ffffff !important;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.nav-bar .nav-link:hover {
+  color: #ababb0 !important;
+}
+
+.nav-bar .navbar-toggler {
+  border-color: #ffffff;
+}
+
+.nav-bar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+
+
+.history-chart
+{
+  color: white;
+}
+
+.crypto_container {
+    background: linear-gradient(to bottom, #000000, #000000 70%, #06063c 100%);
+    color: white;
+    padding: 20px;
+}
+
+.crypto_container .form-control {
+    background-color: rgba(255, 255, 255, 0.1); /* Input field background color */
+    color: white; /* Input text color */
+}
+
+.crypto_container .card {
+    background-color: rgba(255, 255, 255, 0.1); /* Card background color */
+    color: white; /* Card text color */
+}
+
+.crypto_container .card-title {
+    color: white; /* Card title text color */
+}
+
+.crypto_container .btn {
+    background-color: #c9c91f; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+}
+
+.crypto_container .btn:hover {
+    background-color: #c9c91f; /* Change button background color on hover */
+    color: black;
+}
+
+
+
+
+
+
+.gradient-background {
+    background: linear-gradient(to bottom, #000000, #00008b);
+    min-height: 100vh;
+    padding: 20px;
+    min-width: 100%;
+}

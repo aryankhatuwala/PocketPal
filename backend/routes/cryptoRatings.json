@@ -1,0 +1,30 @@
+{
+  "BTC": {
+    "3. fcas rating": "Moderate",
+    "4. fcas score": 800,
+    "5. developer score": 820,
+    "6. market maturity score": 780,
+    "7. utility score": 850
+  },
+  "EUR": {
+    "3. fcas rating": "High",
+    "4. fcas score": 900,
+    "5. developer score": 910,
+    "6. market maturity score": 890,
+    "7. utility score": 920
+  },
+  "USD": {
+    "3. fcas rating": "Very High",
+    "4. fcas score": 950,
+    "5. developer score": 960,
+    "6. market maturity score": 940,
+    "7. utility score": 970
+  },
+  "INR": {
+    "3. fcas rating": "Low",
+    "4. fcas score": 600,
+    "5. developer score": 650,
+    "6. market maturity score": 580,
+    "7. utility score": 620
+  }
+}
