@@ -53,5 +53,6 @@ app.use('/api/protected/income',passport.authenticate('jwt',{session:false}),inc
 
 app.listen(port,()=>{
     console.log('Server is running on port: '+port);
+    console.log('good');
 });
 
