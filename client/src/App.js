@@ -20,7 +20,7 @@ useEffect(() => {
 
         Axios({
             method: 'get',
-            url: ${apiUrl},
+            url: `${apiUrl}`,
             headers: {
                 'Authorization': localStorage.getItem('jwt'),
             }
