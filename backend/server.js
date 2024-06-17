@@ -11,7 +11,7 @@ const app=express();
 const port=process.env.PORT||5000;
 
 app.use(cors({
-    origin:['https://pocket-pal-frontend.vercel.app/'],
+    origin:['https://pocket-pal-frontend.vercel.app'],
     methods: ["POST","GET"],
     credentials: true
 }
@@ -19,6 +19,9 @@ app.use(cors({
 app.use(bodyparser.json());
 app.use(passport.initialize());
 
+app.get('/',(req,res)=>{
+    res.json("Hello");
+})
 
 require('./config/passport')(passport);
 
