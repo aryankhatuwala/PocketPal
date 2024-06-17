@@ -19,7 +19,7 @@ useEffect(() => {
 
         Axios({
             method: 'get',
-            url: 'http://localhost:5000/api/users/isAuthenticated',
+            url: 'https://pocket-pal-topaz.vercel.app/',
             headers: {
                 'Authorization': localStorage.getItem('jwt'),
             }
