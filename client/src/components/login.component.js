@@ -16,7 +16,7 @@ export default function Login() {
             if (localStorage.getItem('jwt')) {
                 Axios({
                     method: 'get',
-                    url: 'http://localhost:5000/api/users/isAuthenticated',
+                    url: 'http://pocket-pal-topaz.vercel.app/api/users/isAuthenticated',
                     headers: {
                         'Authorization': localStorage.getItem('jwt'),
                     }
