@@ -16,7 +16,7 @@ export default function Login() {
             if (localStorage.getItem('jwt')) {
                 Axios({
                     method: 'get',
-                    url: 'http://pocket-pal-topaz.vercel.app/api/users/isAuthenticated',
+                    url: 'https://pocket-pal-topaz.vercel.app/api/users/isAuthenticated',
                     headers: {
                         'Authorization': localStorage.getItem('jwt'),
                     }
@@ -44,7 +44,7 @@ export default function Login() {
                 password,
 
             }
-            const loginRes = await Axios.post("http://pocket-pal-topaz.vercel.app/api/users/login", loginUser);
+            const loginRes = await Axios.post("https://pocket-pal-topaz.vercel.app/api/users/login", loginUser);
 
             localStorage.setItem('jwt', loginRes.data.token);
            
