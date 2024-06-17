@@ -10,7 +10,12 @@ const router = require('express').Router();
 const app=express();
 const port=process.env.PORT||5000;
 
-app.use(cors());
+app.use(cors({
+    origin:['https://pocket-pal-frontend.vercel.app/'],
+    methods: ["POST","GET"],
+    credentials: true
+}
+));
 app.use(bodyparser.json());
 app.use(passport.initialize());
 
