@@ -244,13 +244,13 @@ router.post('/getHistory', async (req, res) => {
     // Determine the file path based on the choice
     switch (choice) {
         case 'DAILY':
-            filePath = './routes/Daily.json';
+            filePath = './Daily.json';
             break;
         case 'WEEKLY':
-            filePath = './routes/Weekly.json';
+            filePath = './Weekly.json';
             break;
         case 'MONTHLY':
-            filePath = './routes/Monthly.json';
+            filePath = './Monthly.json';
             break;
         default:
             return res.status(400).json({ Error: "Invalid choice" });
@@ -288,7 +288,7 @@ router.post('/getExchangeRate', async (req, res) => {
     const currencyTo = req.body.currencyTo;
 
     // Assuming your JSON file is named 'exchangeRates.json' and located in the same directory
-    const filePath = './routes/exchangeRates.json';
+    const filePath = './exchangeRates.json';
 
     return fetchDataFromFile(filePath, res);
 });
@@ -297,7 +297,7 @@ router.post('/getCryptoRating', async (req, res) => {
     const currencyName = req.body.currencyName;
 
     // Assuming your JSON file is named 'cryptoRatings.json' and located in the same directory
-    const filePath = './routes/cryptoRatings.json';
+    const filePath = './cryptoRatings.json';
 
     return fetchDataFromFile(filePath, res);
 });
