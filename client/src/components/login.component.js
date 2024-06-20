@@ -9,7 +9,7 @@ export default function Login() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [modalShow, setModalShow] = useState(false);
-    const apiUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
+    const apiUrl = process.env.REACT_APP_BACKEND_URL || 'https://localhost:5000';
 
     useEffect(() => {
         const checkLoggedIn = async () => {
